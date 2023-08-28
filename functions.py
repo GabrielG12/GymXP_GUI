@@ -1,4 +1,6 @@
-import tkinter as tk
+def function_1():
+    def function_inside(a, b):
+        return a+b
 
-def on_button_click():
-    tk.label.config(text="Button Clicked!")
+    return
+
