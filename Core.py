@@ -605,8 +605,14 @@ def window_after_login(username):
                             if key == 'username':
                                 pass
                             else:
-                                if key=='id':
-                                    listbox.insert(tk.END, f"Training {key}: {value}")
+                                if key == 'id':
+                                    listbox.insert(tk.END, f"Training ID: {value}")
+                                elif key == 'repetitions':
+                                    listbox.insert(tk.END, f"Number of {key} per set: {value}")
+                                elif key == 'date':
+                                    listbox.insert(tk.END, f"Date of the completed training: {value}")
+                                elif key == 'exercise':
+                                    listbox.insert(tk.END, f"Name of the {key}: {value}")
                                 else:
                                     listbox.insert(tk.END, f"{value}")
 
